@@ -273,6 +273,7 @@ class MainActivity : ComponentActivity() {
         val context = LocalContext.current
         val backGroundColor = Color(ContextCompat.getColor(context, R.color.backGroundColor))
 
+        var selectedTab by remember { mutableStateOf("Top Links") }
         val list = if (selectedTab == "Top Links") {
             dashboardData.data.top_links.map { it }
         } else {
