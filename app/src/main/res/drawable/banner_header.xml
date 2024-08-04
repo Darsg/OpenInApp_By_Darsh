@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/topBanner"/>
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+
+    <!-- Bottom Color with Rounded Corners -->
+    <item android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <size
+                android:height="30dp"/> <!-- Fixed height for the bottom color -->
+            <corners
+                android:topRightRadius="24dp"
+                android:topLeftRadius="24dp"/>
+        </shape>
+    </item>
+</layer-list>
